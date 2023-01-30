@@ -56,6 +56,3 @@
 
 #[[print(valor)for valor in lista] for lista in listas]
 
-
-
-# 
