@@ -33,8 +33,39 @@ No entanto, também é possível usar um bloco except genérico, sem especificar
 qualquer exceção que ocorra no bloco try. Por exemplo:
 
 try:
-    # Código que pode gerar uma exceção
+    # Código que pode gerar uma exceção            
+
 except:
     # Tratamento para qualquer exceção que ocorra
 
 É importante tratar as exceções de forma apropriada para lidar com erros e garantir que o programa continue sua execução de forma estável.
+
+
+
+Try / Except / Else / Finaly :
+Dica de quando e onde tratar código
+TODA ENTRADA DE USUÁRIO DEVE SER TRATADA! 
+OBS: A função do usuário é DESTRUIR seu sistema!
+
+Ex:
+
+
+num = 0
+try:
+    num = int("Digite um número: ")
+    print(f'("Você digitou {num}")
+except: ValueError
+    print("Valor incorreto")
+else:   (Só é executado se não houver erro)
+ print("Você digitou {num}")  
+
+ 
+Finaly:
+O bloco Finaly SEMPRE é executado independente de erro, geralmente é utilizado para fechar ou desalocar recursos!
+
+
+
+
+
+
+
